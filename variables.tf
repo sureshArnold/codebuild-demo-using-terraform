@@ -99,7 +99,7 @@ variable "cache_type" {
   description = "Valid values No_cache, Local, S3"
   default = "S3"
   validation {
-    condition = contains(["NO_CACHE","S3","LOCAL"])
+    condition = contains(["NO_CACHE","S3","LOCAL"],var.cache_type)
     error_message = "cache type must be one of:NO_CACHE,S3,LOCAL"
   }
 }
