@@ -4,6 +4,8 @@
 
 application = "codebuild_demo"
 
+# updated repo 
+
 codebuild_image = "aws/codebuild/standard:7.0"
 codebuild_type= "LINUX_CONTAINER"
 priviliged = "false"
