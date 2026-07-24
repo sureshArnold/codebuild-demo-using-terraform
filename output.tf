@@ -1,5 +1,6 @@
 output "codebuild_secret" {
     value = aws_codebuild_webhook.codebuild_project[*].secret
+    sensitive = true
   
 }
 

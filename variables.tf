@@ -45,10 +45,10 @@ variable "codebuild_build_timeout" {
 
 variable "source_type" {
     type = string
-    default = "GITHUB_ENTERPRISE"
+    default = "GITHUB"
   validation {
-    condition = contains(["GITHUB_ENTERPRISE","S3","NO_SOURCE"],var.source_type)
-    error_message = "variable type must be GITHUB_ENTERPRISE,S3,NO_SOURCE."
+    condition = contains(["GITHUB","S3","NO_SOURCE"],var.source_type)
+    error_message = "variable type must be GITHUB,S3,NO_SOURCE."
   }
 }
 
@@ -91,7 +91,7 @@ variable "s3_bucket" {
 }
 
 variable "artifact_type" {
-  default = "s3"
+  default = "S3"
   description = "Build output artifact's type. valid values: CODEPIPELINE,NO_ARTFACTS,S3"
 }
 

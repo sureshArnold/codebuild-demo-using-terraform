@@ -10,5 +10,5 @@ output "codebuild_role_name" {
 }
 
 output "codebuild_role_arn" {
-    value = aws.iam_role.codebuild-role.arn
+    value = aws_iam_role.codebuild-role.arn
 }

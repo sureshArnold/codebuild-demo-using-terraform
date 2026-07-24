@@ -1,8 +1,10 @@
-terraform {
-    git_source = git@github.com:sureshArnold/codebuild-demo-using-terraform.git
-}
+#terraform {
+ #   git_source = "git@github.com:sureshArnold/codebuild-demo-using-terraform.git"
+#}
 
 application = "codebuild_demo"
+
+# updated repo 
 
 codebuild_image = "aws/codebuild/standard:7.0"
 codebuild_type= "LINUX_CONTAINER"
